@@ -1,0 +1,90 @@
+[
+  {
+    "source": "./src/assets/chk-sal.jpeg",
+    "name": "Sałatka z kurczaka"
+  },
+  {
+    "source": "./assets/pierogi.jpg",
+    "name": "Pierogi"
+  },
+  {
+    "source": "../assets/tortilla.jpg",
+    "name": "Tortilla"
+  },
+  {
+    "source": "chicken-and-veg.jpg",
+    "name": "Kurczak z warzywami"
+  },
+  {
+    "source": "grill-beef.jpg",
+    "name": "Grilowana wołowina"
+  },
+  {
+    "source": "straw-pud.jpeg",
+    "name": "Pudding truskawkowy"
+  },
+  {
+    "source": "turkey-sal.jpg",
+    "name": "Sałatka z indykiem"
+  },
+  {
+    "source": "vegan.png",
+    "name": "Kanapka vegańska"
+  },
+  {
+    "source": "jogurt.jpg",
+    "name": "Jogurt z owocami"
+  },
+  {
+    "source": "jajeczn.jpg",
+    "name": "Jajecznica"
+  },
+  {
+    "source": "klops.jpg",
+    "name": "Klopsy wołowe"
+  },
+  {
+    "source": "chk-sal.jpeg",
+    "name": "Sałatka z kurczaka"
+  },
+  {
+    "source": "pierogi.jpg",
+    "name": "Pierogi"
+  },
+  {
+    "source": "tortilla.jpg",
+    "name": "Tortilla"
+  },
+  {
+    "source": "chicken-and-veg.jpg",
+    "name": "Kurczak z warzywami"
+  },
+  {
+    "source": "grill-beef.jpg",
+    "name": "Grilowana wołowina"
+  },
+  {
+    "source": "straw-pud.jpeg",
+    "name": "Pudding truskawkowy"
+  },
+  {
+    "source": "turkey-sal.jpg",
+    "name": "Sałatka z indykiem"
+  },
+  {
+    "source": "vegan.png",
+    "name": "Kanapka vegańska"
+  },
+  {
+    "source": "jogurt.jpg",
+    "name": "Jogurt z owocami"
+  },
+  {
+    "source": "jajeczn.jpg",
+    "name": "Jajecznica"
+  },
+  {
+    "source": "klops.jpg",
+    "name": "Klopsy wołowe"
+  }
+]

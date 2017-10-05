@@ -1,0 +1,5 @@
+<div class="chooseMenu">
+  <span class="close" ng-click="$ctrl.setvisible({type: 0})">close</span>
+  <label>Search:</label><input type="text" ng-change="$ctrl.showChange()" ng-model="$ctrl.searchText" />
+  <button ng-click="$ctrl.$scope.$emit('ADD_TODO', $ctrl.title, $ctrl.description)">Emit some shit!</button>
+</div>

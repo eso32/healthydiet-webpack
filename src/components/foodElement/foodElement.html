@@ -1,0 +1,24 @@
+<div class="cell-food"  curtains-control>
+
+    <div class="curtain" >
+      <span>+</span>
+    </div>
+    <div class="days">
+      <div ng-click="$ctrl.setDay('pon', $ctrl.item.name)"><p>Poniedziałek</p></div>
+      <div ng-click="$ctrl.setDay('wt', $ctrl.item.name)"><p>Wtorek</p></div>
+      <div ng-click="$ctrl.setDay('sr', $ctrl.item.name)"><p>Środa</p></div>
+      <div ng-click="$ctrl.setDay('czw', $ctrl.item.name)"><p>Czwartek</p></div>
+      <div ng-click="$ctrl.setDay('pt', $ctrl.item.name)"><p>Piątek</p></div>
+      <div ng-click="$ctrl.setDay('all', $ctrl.item.name)"><p>Cały tydzień</p></div>
+    </div>
+
+    <div class="meals">
+      <div ng-click="$ctrl.setTime('snia')"><p>Śniadanie</p></div>
+      <div ng-click="$ctrl.setTime('obiad')"><p>Obiad</p></div>
+      <div ng-click="$ctrl.setTime('kola')"><p>Kolacja</p></div>
+    </div>
+
+    {{$ctrl.item.name}}<br/>
+    <img ng-src="images/{{$ctrl.item.source}}" alt="{{$ctrl.item.name}} - zdjęcie" />
+
+</div>

@@ -1,0 +1,61 @@
+<div class="menu-page">
+  <header class="header-menu">
+    <choose-menu setvisible="menu.setvisible(type)" ng-show="menu.visible[0]" search-text="menu.searchText"></choose-menu>
+    <place-order ></place-order>
+    <div class="cell-14">
+      <div class="inner">
+        <a href="#!/main">
+          <logo></logo>
+        </a>
+      </div>
+      <div class="inner">
+        <span>Śniadanie</span>
+      </div>
+      <div class="inner">
+        <span>Obiad</span>
+      </div>
+      <div class="inner">
+        <span>Kolacja</span>
+      </div>
+    </div>
+
+    <div class="cell-14" ng-repeat="(day, menuCategory) in menu.orders">
+      <div class="inner">
+        <span>{{day}}</span>
+      </div>
+      <div class="inner cell-order">
+        <span>{{menuCategory.snia}}</span>
+      </div>
+      <div class="inner cell-order">
+        <span>{{menuCategory.obiad}}</span>
+      </div>
+      <div class="inner cell-order">
+        <span>{{menuCategory.kola}}</span>
+      </div>
+    </div>
+
+    <div class="cell-14">
+      <div class="inner">
+
+      </div>
+      <div class="inner cell-button" ng-click="menu.setvisible(0)">
+        <span>Wybierz menu</span>
+      </div>
+      <div class="inner cell-button" ng-click="showOrder=true">
+        <span>Zamawiam</span>
+      </div>
+      <div class="inner cell-button" ng-click="showSearch=true">
+        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="food-list">
+    <food-element item="item"
+                  set-order="menu.setOrder(temp)"
+                  search-text="menu.searchText"
+                  ng-repeat="item in menu.items | filter: menu.searchText">
+    </food-element>
+  </main>
+</div>

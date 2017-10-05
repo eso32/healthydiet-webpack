@@ -1,0 +1,174 @@
+$main-cl: rgba(28, 49, 58, 0.95);
+$second-cl: #718792;
+$darker-sec-cl: #3a4951;
+@mixin main-bg($opacity) {
+          background: rgba(28, 49, 58, $opacity);
+}
+
+div.menu-page{
+  width: 100%;
+  height: 100%;
+  background: lightgreen;
+  header.header-menu{
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.75);
+    background: $main-cl;
+    width: 100%;
+    height: 250px;
+    font-size: 12px;
+    position: relative;
+    color: white;
+    div.cell-14{
+      margin: 0;
+      float: left;
+      display: inline-block;
+      width: 14.28%;
+      height: 100%;
+      text-align: center;
+      div.inner{
+        position: relative;
+        padding: 0;
+        height: 25%;
+        margin-left: 0;
+        span{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          cursor: default;
+          user-select: none;
+        }
+        a{
+          div.logo{
+            svg{
+              width: auto;
+              height: 50px;
+              transform-origin: 50% 50%;
+              cursor: pointer;
+              &:hover{
+                animation: turn 0.5s ease-in-out alternate;
+              }
+              #meat-2, #meat-3, #meat-4, #meat-5{
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+      div.cell-order{
+        background: $second-cl;
+        box-sizing: border-box;
+        border: 1px solid $main-cl;
+      }
+      div.cell-button{
+        box-sizing: border-box;
+        border: 1px solid $main-cl;
+        background: $main-cl;
+//        background: linear-gradient(to right, $main-cl,$darker-sec-cl,$main-cl);
+        transition: background 1s linear;
+        cursor: pointer;
+        font-weight: 900;
+        span{
+          cursor: pointer;
+          i{
+            font-size: 30px;
+            transition: margin 0.1s linear;
+            &:hover{
+              margin-top: -10px;
+            }
+          }
+        }
+        &:hover{
+//          background: linear-gradient(to right, $main-cl,$second-cl,$main-cl);
+          background: $darker-sec-cl;
+        }
+      }
+    }
+    div.cell-full{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -100%;
+      left: 0px;
+      background: rgba(0,0,0,0.8);
+      i.fa.fa-times{
+        position: absolute;
+        font-size: 40px;
+        cursor: pointer;
+        top: 15px;
+        right: 25px;
+      }
+      div.search{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        overflow: hidden;
+        color: $second-cl;
+        div{
+          margin: 0 auto;
+          width: auto;
+          i{
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 40px;
+            // float: left;
+            @include main-bg(0.95);
+            height: 52px;
+            width: 40px;
+            user-select: none;
+          }
+          input{
+            color: $second-cl;
+            // float: left;
+            width: calc(100% - 80px - 60px);
+            height: 60px;
+            border: none;
+            @include main-bg(0.95);
+            font-size: 30px;
+            font-style: italic;
+            font-family: 'Quicksand', sans-serif;
+            padding-left: 10px;
+            outline: none;
+          }
+          &:after{
+            content: "";
+            display: table;
+            clear: both;
+          }
+        }
+      }
+      div.tags, div.diet{
+        display: inline-block;
+        width: auto;
+        color: white;
+        text-align: left;
+        margin-top: 10px;
+        padding: 10px 40px;
+        border-right: 1px solid $darker-sec-cl;
+        h1{
+          margin: 0px;
+          margin-bottom: 20px;
+        }
+        span{
+          user-select: none;
+          padding: 5px;
+          border-radius: 3px;
+          border: 2px solid $second-cl;
+          cursor: pointer;
+          &:hover{
+            background: $darker-sec-cl;
+          }
+        }
+      }
+      &.animateIn{
+        animation: slide-in 0.5s cubic-bezier(.64,.34,.53,1.21);
+        animation-fill-mode: forwards;
+      }
+      &.animateOut{
+        animation: slide-out 0.3s cubic-bezier(.64,.34,.53,1.21);
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+div.logo{
+  svg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: auto;
+    #meat-2, #meat-3, #meat-4, #meat-5{
+      opacity: 0;
+    }
+    #meat-1{
+      animation: hide 0s 1s forwards, hide 1s 3s forwards reverse;
+    }
+    #meat-2{
+      animation: hide 0s 1s forwards reverse, hide 0s 1.5s forwards;
+    }
+    #meat-3{
+      animation: hide 0s 1.5s forwards reverse, hide 0s 2s forwards;
+    }
+    #meat-4{
+      animation: hide 0s 2s forwards reverse, hide 0s 2.5s forwards;
+    }
+    #meat-5{
+      animation: hide 0s 2.5s forwards reverse, hide 0s 3s forwards;
+    }
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
